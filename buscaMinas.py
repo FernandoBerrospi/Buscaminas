@@ -25,10 +25,14 @@ def create_grilla():
         canvas.create_line(0,interval*i,width,interval*i,fill = color_line)
 
 def create_matriz():
+    if len(mines)>0:
+        for i in range(n):
+            mines[i] = []
     for i in range(n):
         mines.append([])
         for q in range(n):
             mines[i].append(randint(0, 1))
+    print(mines)
 
 def create_square(x,y,color):
     canvas.create_rectangle(x*interval,y*interval,(x+1)*interval,(y+1)*interval,fill=color)
