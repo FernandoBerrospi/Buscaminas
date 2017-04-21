@@ -143,3 +143,5 @@ def click(event):
 
 canvas.bind("<Button-1>", click)
 
+mainloop()
+
